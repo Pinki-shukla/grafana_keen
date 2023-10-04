@@ -76,7 +76,7 @@ Where:
 <b>name</b> = assign a  name to the container, for example, grafana</br>
 
 
-<v> docker.io/grafana/grafana-enterprise: </b> This is the name of the image we want to run inside the container. It's called 'grafana-enterprise,' and it's stored in a special place on the internet called 'Docker Hub.'
+<b> docker.io/grafana/grafana-enterprise: </b> This is the name of the image we want to run inside the container. It's called 'grafana-enterprise,' and it's stored in a special place on the internet called 'Docker Hub.'</br>
 
 http://localhost:3001 hit on web browser to see Grafana login page in your web browser.
 
