@@ -32,6 +32,7 @@ Regular collection of information and data to measure progress of projects and a
 Podman is an open source tool for developing, managing, and running containers
 on your Linux® system
 
+
 ## Grafana :
 
 Grafana open-source software enables you to query, visualise, alert on, and explore your metrics, logs, and traces wherever they are stored.
@@ -57,7 +58,14 @@ Node Exporter collects a wide range of system metrics, including CPU, usage Memo
 
 # Installation Process:
 
-## Step-1 Create a Grafana container:
+## Step-1 Install podman:
+
+```
+sudo apt install -y podman
+
+```
+
+## Step-2 Create a Grafana container:
 To run the latest stable version of Grafana, run the following command:
 
 ```
@@ -90,7 +98,7 @@ http://localhost:3001 hit on web browser to see Grafana login page in your web b
 
 
 
-## Step-2 Create Prometheus container on Podman:
+## Step-3 Create Prometheus container on Podman:
 
 <b>Create directory :-</b>
 ```
@@ -158,7 +166,7 @@ http://localhost:9090 on web browser to see prometheus.
   ![](expoerters.png)
 
  
-## Step-3 Create Node exporter container on podman
+## Step-4 Create Node exporter container on podman
 
 ```
 
