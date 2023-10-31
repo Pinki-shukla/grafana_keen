@@ -44,9 +44,9 @@ ls
 ```
 vim alertmanager.yml
 ```
-![](/images/alertmanager%20directory.png)
+![](./images/alertmanager%20directory.png)
 
-![](/images/alertmanager.yml.png)
+![](./images/alertmanager.yml.png)
 - ## Step:4 Insert data into the configuation file:
 
 
@@ -79,7 +79,7 @@ receivers:
 ```
 podman run -d -p 9093:9093 --name alertmanager -v /home/pinki/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml  docker.io/prom/alertmanager
 ```
-![](/images/run%20alermanager.png)
+![](./images/run%20alermanager.png)
 **podman run:** This is the command to start a container using Podman, a containerization tool similar to Docker.
 
 **-d:** This flag stands for "detached" mode, which means the container will run in the background. It's commonly used for running services that should not be tied to the terminal session.
@@ -113,7 +113,7 @@ ls
 ```
 vim alertrules.yml
 ```
-![](/images/000000000.png)
+![](./images/000000000.png)
 - ## Step:8 Insert data into the alertrules.yml:
 
 ```
@@ -130,7 +130,7 @@ groups:
       description: '{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute.'
 ```
 
-![](/images/alertrules.yml.png)
+![](./images/alertrules.yml.png)
 
 - ## Step:9 Create prometheus.yml file into the prometheus directory
 ```
@@ -172,7 +172,7 @@ scrape_configs:
 
 
 ```
-![](/images/prometheus.yml.png)
+![](./images/prometheus.yml.png)
 ## Step: 10 Run this command to start Prometheus (alertrules.yml):
 
 ```
@@ -194,4 +194,4 @@ podman run -d --name prometheus -p 9090:9090 -v /home/pinki/prometheus/prometheu
 
 - ## Get Email Alert 
 
-![](/images/prometheus%20email%20alert.png)
+![](./images/prometheus%20email%20alert.png)
