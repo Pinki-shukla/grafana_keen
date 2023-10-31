@@ -31,9 +31,9 @@ ls
 ```
 vim alertmanager.yml
 ```
-![](images/alertmanager%20directory.png)
+![](.images/alertmanager%20directory.png)
 
-![](images/alertmanager.yml.png)
+![](.images/alertmanager.yml.png)
 - ## Insert data into the configuation file:
 
 
@@ -99,7 +99,7 @@ ls
 ```
 vim alertrules.yml
 ```
-![](images/000000000.png)
+![](.images/000000000.png)
 - ## Insert data into the alertrules.yml:
 
 ```
@@ -116,7 +116,7 @@ groups:
       description: '{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute.'
 ```
 
-![](images/alertrules.yml.png)
+![](.images/alertrules.yml.png)
 
 
 ## Run this command to start Prometheus (alertrules.yml):
@@ -140,4 +140,4 @@ podman run -d --name prometheus -p 9090:9090 -v /home/pinki/prometheus/prometheu
 
 - ## Get Email Alert 
 
-![](prometheus%20email%20alert.png)
+![](.prometheus%20email%20alert.png)
