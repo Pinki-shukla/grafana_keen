@@ -173,7 +173,7 @@ scrape_configs:
 
 ```
 ![](./images/prometheus.yml.png)
-## Step: 10 Run this command to start Prometheus (alertrules.yml):
+## Step: 11 Run this command to start Prometheus (alertrules.yml):
 
 ```
 podman run -d --name prometheus -p 9090:9090 -v /home/pinki/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml -v /home/pinki/prometheus/alertrules.yml:/etc/prometheus/alertrules.yml docker.io/prom/prometheus
