@@ -98,7 +98,7 @@ To run the latest stable version of Grafana, run the following command:
 podman run -d -p 3001:3000 --name=grafana docker.io/grafana/grafana-enterprise
 
 ```
-![](images/vim%20grafana%20command.png)
+![](./images/vim%20grafana%20command.png)
 
 
 Where:
