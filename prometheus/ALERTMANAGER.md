@@ -33,7 +33,7 @@ vim alertmanager.yml
 ```
 ![](.images/alertmanager%20directory.png)
 
-![](.images/alertmanager.yml.png)
+![](./images/alertmanager.yml.png)
 - ## Insert data into the configuation file:
 
 
