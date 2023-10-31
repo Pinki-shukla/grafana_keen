@@ -209,7 +209,7 @@ http://localhost:9090 on the web browser to see the prometheus.
 podman run -d --name=node-exporter -p 9100:9100 -v"/:/host:ro,rslave" quay.io/prometheus/node-exporter:latest --path.rootfs=/host
 
  ```
-![](images/vim%20node%20exporter.png)
+![](./images/vim%20node%20exporter.png)
 
  <b>podman run:</b> This part of the command instructs podman to run a container.
 
@@ -238,7 +238,7 @@ The <b>podman ps</b> command is used to list the currently running containers on
  ![](/images/grafana%20images.png)
 ## Grafana setup has been ready with Dashboard. 
 
-![](/images/grafana%20dashboard%20setup.png)
+![](./images/grafana%20dashboard%20setup.png)
 
 
     
