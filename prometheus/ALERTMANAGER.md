@@ -140,4 +140,4 @@ podman run -d --name prometheus -p 9090:9090 -v /home/pinki/prometheus/prometheu
 
 - ## Get Email Alert 
 
-![](./prometheus%20email%20alert.png)
+![](./images/prometheus%20email%20alert.png)
