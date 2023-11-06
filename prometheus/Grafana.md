@@ -57,34 +57,6 @@ sudo apt update
 sudo apt install -y podman
 ```
 
-<b>Note:-</b> Follow these commands one by one if podman not installed 
-
-```
- source /etc/os-release
-```
-- This command reads and loads the information from the /etc/os-release file into the current shell environment. It's used to determine the version and other details about the operating system, which is required for configuring the package repository URL.
-```
- sudo sh -c "echo 'deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_$(lsb_release -rs)/ /' > /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list"
-```
-- This command adds a new software repository to the system's APT package manager. It specifies the URL for the Podman repository based on the Ubuntu version obtained using lsb_release -rs. The repository URL is added to a new file in the /etc/apt/sources.list.d/ directory.
-```
-  wget https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_$(lsb_release -rs)/Release.key  
-```
--  This command downloads the GPG key used to verify the packages from the Podman repository.
-```
- sudo apt-key add - < Release.key
-```
-- This command adds the GPG key to the system's keyring. It's necessary for verifying the authenticity of packages from the repository.
-```
- sudo apt update
-```
-- This command updates the local package database to include the newly added Podman repository.
-
-```
-sudo apt install -y podman
-```
-- Finally, this command installs Podman on your Ubuntu-based system. The -y flag is used to automatically answer "yes" to any confirmation prompts during the installation.
-
 ```
  podman --version
 ```
